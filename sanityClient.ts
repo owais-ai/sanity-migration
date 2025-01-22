@@ -1,5 +1,8 @@
 // sanityClient.ts
 import { createClient } from '@sanity/client';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const client = createClient({
   projectId: process.env.projectId, // Replace with your project ID
